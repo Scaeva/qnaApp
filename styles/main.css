@@ -1,0 +1,42 @@
+#header{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+#grid{
+	display: grid;
+	grid-template-columns: 60% auto;
+}
+
+#img{
+	max-width: 800px;
+}
+
+input[type="file"]{
+	display: none;
+}
+
+button{
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+#answers>button{
+	display: block;
+}
+
+#answers>button+button{
+	margin-top: 10px;
+}
+
+#answers>button.correct{
+	border-color: green;
+}
+
+#answers>button.wrong{
+	border-color: red;
+}
+
+#next-btn{
+	margin-top: 20px;
+}

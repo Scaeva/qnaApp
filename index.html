@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Q&amp;A</title>
+	<link rel="stylesheet" type="text/css" href="/styles/main.css" />
+	<script src="/js/main.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<span id="availableQnA"></span>
+		<span id="uploads">
+			<button data-for="qnaUpload"><span>Upload Q&amp;A</span><input type="file" id="qnaUpload" accept=".json" /></button>
+			<button data-for="mediaUpload"><span>Upload Media</span><input type="file" id="mediaUpload" accept=".jpg,.jpeg,.gif,.png,.webp" multiple /></button>
+		</span>
+	</div>
+	<div id="container" style="display: none">
+		<div id="header">
+			<span id="current-q"></span>/<span id="answers-count"></span>
+		</div>
+		<div id="grid">
+			<div>
+				<img id="img" src="" />
+				<div id="question"></div>
+			</div>
+			<div>
+				<div id="answers"></div>
+				<button id="next-btn">Next question</button>
+			</div>
+		<div>
+	</div>
+	<script>
+		init();
+	</script>
+</body>
+</html>
